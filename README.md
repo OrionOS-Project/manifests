@@ -14,3 +14,10 @@ Then to sync up:
 ```
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
+To build, use following the commands:
+```
+. build/envsetup.sh
+orion_$device-userdebug
+m bacon -j$(nproc --all)
+```
+
